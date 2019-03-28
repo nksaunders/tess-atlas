@@ -6,7 +6,7 @@ docs/notebooks/${VERSION}/%.html: notebooks/${VERSION}/%.ipynb toipage.tpl
 	jupyter nbconvert --to html $< --output-dir docs/notebooks/${VERSION} --template=toipage.tpl
 
 html: $(NOTEBOOKS)
-	git add docs/notebooks/${VERSION}/*.html
-	git commit -m "updating notebooks"
+	# git add docs/notebooks/${VERSION}/*.html
+	# git commit -m "updating notebooks"
 
 .PHONY: html
